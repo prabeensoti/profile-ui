@@ -1,1 +1,34 @@
-<p>blog works!</p>
+<div class="container">
+<div class="blog-page">
+  <div class="page-header">
+    <h2>Blog</h2>
+  </div>
+  <div class="page-content">
+    <!-- Blog Posts Grid -->
+    <div class="blog-masonry two-columns">
+      <div *ngFor="let blog of blogs">
+      <!-- Blog Post 1 -->
+        <div class="item">
+          <div class="blog-card">
+            <div class="media-block">
+              <a href="/blog-details/{{blog.id}}">
+                <img class="post-image img-fluid" ngSrc="{{blog.img}}" alt="blog-post" height="375"
+                     width="800"/>
+                <div class="mask"></div>
+                <div class="post-date"><span class="day">6</span><span class="month">Dec</span><span class="year">2016</span></div>
+              </a>
+            </div>
+            <div class="post-info">
+              <a href="/blog-details/{{blog.id}}">
+                <h4 class="blog-item-title">{{blog.title}}</h4>
+              </a>
+            </div>
+          </div>
+        </div>
+        <!-- End of Blog Post 1 -->
+      </div>
+    </div>
+    <!-- Blog Posts Grid -->
+  </div>
+</div>
+</div>
