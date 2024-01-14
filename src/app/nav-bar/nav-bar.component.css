@@ -1,6 +1,10 @@
 .navbar{
-  margin: 0 auto;
+  margin: 0;
+  top: 0;
+  position: fixed;
+  width: 100%;
   font-size: 20px;
+  z-index: 3;
 }
 .navbar-brand {
   color: #49515d;
@@ -10,7 +14,7 @@
 }
 
 .navbar-brand span {
-  color: #2eca7f
+  color: #2eca7f;
 }
 
 .navbar-nav li {
@@ -25,11 +29,7 @@ li a:hover {
   text-decoration-thickness: 3px;
   text-underline-position: under;
   text-underline-offset: 3px;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out
+  transition: all .15s ease-in-out;
 }
 
 .active-link {
@@ -38,9 +38,5 @@ li a:hover {
   text-decoration-thickness: 3px;
   text-underline-position: under;
   text-underline-offset: 3px;
-  -webkit-transition: all .15s ease-in-out;
-  -moz-transition: all .15s ease-in-out;
-  -o-transition: all .15s ease-in-out;
-  -ms-transition: all .15s ease-in-out;
-  transition: all .15s ease-in-out
+  transition: all .15s ease-in-out;
 }
