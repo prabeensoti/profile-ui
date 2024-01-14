@@ -11,7 +11,7 @@
           </div>
           <div class="contact-info-block">
             <div class="ci-icon">
-              <i class="fa fa-map-marker"></i>
+              <i class="bi-globe-americas"></i>
             </div>
             <div class="ci-text">
               <h5>USA</h5>
@@ -19,7 +19,7 @@
           </div>
           <div class="contact-info-block">
             <div class="ci-icon">
-              <i class="fa fa-map-marker"></i>
+              <i class="bi-pin-map"></i>
             </div>
             <div class="ci-text">
               <h5>Plantation, Florida</h5>
@@ -27,7 +27,7 @@
           </div>
           <div class="contact-info-block">
             <div class="ci-icon">
-              <i class="fa fa-envelope"></i>
+              <i class="bi-envelope"></i>
             </div>
             <div class="ci-text">
               <h5>sotiprabeen&#64;gmail.com</h5>
@@ -35,7 +35,7 @@
           </div>
           <div class="contact-info-block">
             <div class="ci-icon">
-              <i class="ci ci-phone"></i>
+              <i class="bi-phone"></i>
             </div>
             <div class="ci-text">
               <h5>+1(682) 368-8484</h5>
@@ -52,26 +52,26 @@
             <div class="messages"></div>
 
             <div class="controls">
-              <div class="form-group form-group-with-icon">
-                <i class="fa fa-user"></i>
+              <div class="form-group form-group-with-icon" [class.form-group-focus]="isNameInputFocused">
+                <i class="bi-person" ></i>
                 <label class="form-control-label" for="form_name">Full Name</label>
-                <input id="form_name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required.">
+                <input id="form_name" type="text" name="name" class="form-control" placeholder required="required" data-error="Name is required." (focus)="onNameInputFocus()" (blur)="onNameInputBlur()">
                 <div class="form-control-border"></div>
                 <div class="help-block with-errors"></div>
               </div>
 
-              <div class="form-group form-group-with-icon">
-                <i class="fa fa-envelope"></i>
+              <div class="form-group form-group-with-icon" [class.form-group-focus]="isEmailInputFocused">
+                <i class="bi-envelope"></i>
                 <label class="form-control-label" for="form_email">Email Address</label>
-                <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required.">
+                <input id="form_email" type="email" name="email" class="form-control" placeholder required="required" data-error="Valid email is required." (focus)="onEmailInputFocus()" (blur)="onEmailInputBlur()">
                 <div class="form-control-border"></div>
                 <div class="help-block with-errors"></div>
               </div>
 
-              <div class="form-group form-group-with-icon">
-                <i class="fa fa-comment"></i>
+              <div class="form-group form-group-with-icon" [class.form-group-focus]="isMessageInputFocused">
+                <i class="bi-chat"></i>
                 <label class="form-control-label" for="form_message">Message for Me</label>
-                <textarea id="form_message" name="message" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message."></textarea>
+                <textarea id="form_message" name="message" class="form-control" placeholder rows="4" required="required" data-error="Please, leave me a message." (focus)="onMessageInputFocus()" (blur)="onMessageInputBlur()"></textarea>
                 <div class="form-control-border"></div>
                 <div class="help-block with-errors"></div>
               </div>

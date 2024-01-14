@@ -137,15 +137,21 @@ textarea.form-control:focus {
 .has-error .form-control+.form-control-border {
   background: #ff4c4c
 }
-
-.form-control-label {
+.form-group label {
   opacity: .4;
   position: absolute;
+  top: 9px;
+  font-size: 16px;
   font-weight: 400;
   color: #424242;
   transition: all .3s ease-in-out;
+}
+
+.form-group.form-group-focus label {
+  color: #2eca7f;
   top: -12px;
-  font-size: 16px;
+  font-size: .8em;
+  font-weight: 700;
   z-index: 3;
 }
 

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import {NgForOf, NgOptimizedImage} from "@angular/common";
-import {BlogsModel} from "../model/Blogs.model";
+import {BlogsModel} from "../model/blogs.model";
 import {NgbPagination} from "@ng-bootstrap/ng-bootstrap";
 
 @Component({

@@ -28,7 +28,8 @@
 
 .profile-page .page-header .photo {
   max-width: 280px;
-  border: 3px solid #fff;
+  /*border: 3px solid #fff;*/
+  border-radius: 20px;
   background-color: #fff;
   box-shadow: 0 3px 8px 0 rgba(0, 0, 0, .1);
   transition: all .3s ease-in-out;
@@ -38,6 +39,7 @@ img{
   max-width: 100%;
   max-height: 100%;
   object-fit: cover;
+  border-radius: 20px;
 }
 
 .profile-page .page-header .photo:hover {
