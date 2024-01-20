@@ -1,6 +1,8 @@
 export interface BlogsModel {
-  id: string;
+  url: string;
   title: string;
   img: string;
-  postDate: Date;
+  year: string;
+  month: string;
+  day: string;
 }

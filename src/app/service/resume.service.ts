@@ -7,7 +7,7 @@ const API_ENDPOINT: string = "https://prabeensoti.com/v1";
 @Injectable({
   providedIn: 'root'
 })
-export class ContactService {
+export class ResumeService {
   constructor(private http: HttpClient) {
   }
 

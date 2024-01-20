@@ -9,7 +9,7 @@ const API_ENDPOINT: string = "https://prabeensoti.com/v1";
 @Injectable({
   providedIn: 'root'
 })
-export class ContactService {
+export class BlogService {
 
   constructor(private http: HttpClient) {
   }
@@ -18,7 +18,7 @@ export class ContactService {
     return this.http.get<BlogsModel>(API_ENDPOINT+"/blogs");
   }
 
-  getBlogById(id: string): Observable<BlogDetailsModel> {
+  getBlogById(id?: string): Observable<BlogDetailsModel> {
     return this.http.get<BlogDetailsModel>(API_ENDPOINT + '/blogs/' + id);
   }
 }

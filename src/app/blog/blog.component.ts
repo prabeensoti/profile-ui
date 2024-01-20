@@ -20,10 +20,12 @@ export class BlogComponent {
 
   constructor() {
     this.blogs = [{
-      id: "12hds343sdv",
+      url: "https://blog.hellomedian.com/new-site-new-features-ef3d416aecf8",
       title: "Bootstrap in the Most Popular Framework",
       img: "assets/images/blog_post_1.jpg",
-      postDate: new Date(),
+      year: "2023",
+      month: "SEP",
+      day: "29"
     }]
   }
 

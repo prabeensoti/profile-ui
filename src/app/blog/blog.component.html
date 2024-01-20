@@ -11,15 +11,15 @@
         <div class="item">
           <div class="blog-card">
             <div class="media-block">
-              <a href="/blog-details/{{blog.id}}">
+              <a href="{{blog.url}}" target="_blank" rel="noopener noreferrer">
                 <img class="post-image img-fluid" ngSrc="{{blog.img}}" alt="blog-post" height="375"
                      width="800"/>
                 <div class="mask"></div>
-                <div class="post-date"><span class="day">6</span><span class="month">Dec</span><span class="year">2016</span></div>
+                <div class="post-date"><span class="day">{{ blog.day }}</span><span class="month">{{ blog.month }}</span><span class="year">{{ blog.year }}</span></div>
               </a>
             </div>
             <div class="post-info">
-              <a href="/blog-details/{{blog.id}}">
+              <a href="{{blog.url}}" target="_blank" rel="noopener noreferrer">
                 <h4 class="blog-item-title">{{blog.title}}</h4>
               </a>
             </div>
