@@ -3,7 +3,7 @@ import {Observable} from "rxjs";
 import {ContactModel} from "../model/contact.model";
 import {HttpClient} from "@angular/common/http";
 
-const API_ENDPOINT: string = "https://prabeensoti.com/v1";
+const API_ENDPOINT: string = "https://prabeensoti.com/api/v1";
 
 @Injectable({
   providedIn: 'root'

@@ -2,7 +2,7 @@ import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
 import {Observable} from "rxjs";
 
-const API_ENDPOINT: string = "https://prabeensoti.com/v1";
+const API_ENDPOINT: string = "https://prabeensoti.com/api/v1";
 
 @Injectable({
   providedIn: 'root'
