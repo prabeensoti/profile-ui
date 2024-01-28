@@ -1,4 +1,5 @@
 export interface BlogsModel {
+  id: string;
   url: string;
   title: string;
   img: string;

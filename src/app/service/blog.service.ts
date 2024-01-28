@@ -4,7 +4,7 @@ import {Observable} from "rxjs";
 import {BlogsModel} from "../model/blogs.model";
 import {BlogDetailsModel} from "../model/blog-details.model";
 
-const API_ENDPOINT: string = "https://prabeensoti.com/api/v1";
+const API_ENDPOINT: string = "https://mt4942ktyj.execute-api.us-east-1.amazonaws.com/v1";
 
 @Injectable({
   providedIn: 'root'
@@ -14,8 +14,8 @@ export class BlogService {
   constructor(private http: HttpClient) {
   }
 
-  public getAllBlogs(): Observable<BlogsModel> {
-    return this.http.get<BlogsModel>(API_ENDPOINT+"/blogs");
+  public getAllBlogs(): Observable<BlogsModel[]> {
+    return this.http.get<BlogsModel[]>(API_ENDPOINT+"/blogs/ui");
   }
 
   getBlogById(id?: string): Observable<BlogDetailsModel> {
